@@ -1,0 +1,72 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Top Metrics */
+.metrics {
+  display: flex;
+  gap: 15px;
+}
+.metric-box {
+  flex: 1;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Attendance + Calendar */
+.attendance-calendar {
+  display: flex;
+  gap: 20px;
+}
+.attendance-graph, .calendar {
+  flex: 1;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Distribution + Fees */
+.distribution-fees {
+  display: flex;
+  gap: 20px;
+}
+.student-distribution, .fee-collection {
+  flex: 1;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Announcements + Events */
+.announcements-events {
+  display: flex;
+  gap: 20px;
+}
+.announcements, .upcoming-events {
+  flex: 1;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: flex;
+  gap: 15px;
+}
+.action-btn {
+  flex: 1;
+  height: 60px;
+  background: #e3e3e3;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

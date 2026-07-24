@@ -76,7 +76,10 @@
       color: white;
       padding: 20px;
       overflow: auto;
-      scrollbar-color: green darkgray;
+    }
+
+    .showpages::-webkit-scrollbar{
+      width: 1px;
     }
 
     

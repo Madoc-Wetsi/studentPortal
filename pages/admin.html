@@ -13,13 +13,12 @@
     />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css">
   </head>
   <body>
     <main>
       <div class="nav">
-        <div class="miniheader">
-            
-        </div>
+        <div class="miniheader"></div>
         <nav role="navigation">
           <a href="#" id="dashboard"><i class="fa fa-home"></i> Dashboard</a>
           <p>MAIN</p>
@@ -28,117 +27,88 @@
             ><i class="fa fa-chalkboard-teacher"></i> Teachers</a
           >
           <a href="#" id="classes"><i class="fa fa-school"></i> Classes</a>
-          <a href="#" id="attendance"><i class="fa fa-calendar-check"></i> Attendance</a
+          <a href="#" id="attendance"
+            ><i class="fa fa-calendar-check"></i> Attendance</a
           >
-          <a href="#" id="examinations"><i class="fa fa-file-alt"></i> Examinations</a>
-          <a href="#" id="fees"><i class="fa fa-money-bill"></i> Fees & Payments</a>
+          <a href="#" id="examinations"
+            ><i class="fa fa-file-alt"></i> Examinations</a
+          >
+          <a href="#" id="fees"
+            ><i class="fa fa-money-bill"></i> Fees & Payments</a
+          >
           <a href="#" id="library"><i class="fa fa-book"></i> Library</a>
           <a href="#" id="transport"><i class="fa fa-bus"></i> Transport</a>
-          <a href="#" id="mysubjects"><i class="fa fa-graduation-cap"></i> My Subjects</a>
-          <a href="#" id="assignments"><i class="fa fa-tasks"></i> Assignments</a>
+          <a href="#" id="mysubjects"
+            ><i class="fa fa-graduation-cap"></i> My Subjects</a
+          >
+          <a href="#" id="assignments"
+            ><i class="fa fa-tasks"></i> Assignments</a
+          >
           <a href="#" id="grades"><i class="fa fa-chart-bar"></i> Grades</a>
           <p>SYSTEM</p>
-          <a href="#" id="announcements"><i class="fa fa-bell"></i> Announcements</a>
+          <a href="#" id="announcements"
+            ><i class="fa fa-bell"></i> Announcements</a
+          >
           <a href="#" id="calendar"><i class="fa fa-calendar"></i> Calendar</a>
           <a href="#" id="messages"><i class="fa fa-envelope"></i> Messages</a>
           <a href="#" id="profile"><i class="fa fa-user"></i> Profile</a>
           <a href="#" id="settings"><i class="fa fa-cog"></i> Settings</a>
 
-          <a href="#" class="navfooter"><i class="fa fa-sign-out-alt"></i> Logout</a>
+          <a href="#" class="navfooter"
+            ><i class="fa fa-sign-out-alt"></i> Logout</a
+          >
         </nav>
       </div>
       <div class="in">
         <header>
-    
+          <div>
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <div>
+            <i class="fa fa-message"></i>
+            <i fa fa-alert></i>
+          </div>
         </header>
 
         <div class="showpages">
-          
-        <section id="dashboard1">
-          <div class="namedisplay"></div>
-          <div class="numup"></div>
+          <section id="dashboard1">
+            <!-- Display Area -->
+            <div class="dashboard">
+              <!-- Top Metrics -->
+              <div class="metrics">
+                <div class="metric-box"></div>
+                <div class="metric-box"></div>
+                <div class="metric-box"></div>
+                <div class="metric-box"></div>
+              </div>
 
-          <div class="stat">
-            <div class="leftcont">
-              <div class="mycourses"></div>
-              <div class="calendar"></div>
+              <!-- Attendance Overview + Calendar -->
+              <div class="attendance-calendar">
+                <div class="attendance-graph"></div>
+                <div class="calendar"></div>
+              </div>
+
+              <!-- Student Distribution + Fee Collection -->
+              <div class="distribution-fees">
+                <div class="student-distribution"></div>
+                <div class="fee-collection"></div>
+              </div>
+
+              <!-- Announcements + Upcoming Events -->
+              <div class="announcements-events">
+                <div class="announcements"></div>
+                <div class="upcoming-events"></div>
+              </div>
+
+              <!-- Quick Actions -->
+              <div class="quick-actions">
+                <div class="action-btn"></div>
+                <div class="action-btn"></div>
+                <div class="action-btn"></div>
+                <div class="action-btn"></div>
+              </div>
             </div>
-            <div class="rightcont">
-              <div class="upcoming"></div>
-              <div class="recentannouncement"></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="mysubjects1">
-          <div class="miniheader">
-            <h1>My Courses</h1>
-          </div>
-
-          <div class="coursedisplay"></div>
-        </section>
-
-        <section id="assignments1">
-          <div class="namedisplay">Assignments</div>
-          <div class="assignmentdisplay"></div>
-        </section>
-
-        <section id="grades1">
-          <div class="namedisplay">Grades</div>
-          <div class="gradedisplay"></div>
-        </section>
-
-        <section id="announcements1">
-          <div class="namedisplay">Announcements</div>
-          <div class="announcementdisplay"></div>
-        </section>
-
-        <section id="calendar1">
-          <div class="namedisplay">Calendar</div>
-          <div class="calendardisplay"></div>
-        </section>
-
-        <section id="messages1">
-          <div class="namedisplay">Messages</div>
-          <div class="messagedisplay"></div>
-        </section>
-
-        <section id="profile1">
-          <div class="namedisplay">Profile</div>
-          <div class="numup">Student ID: <strong>2026001</strong></div>
-          <div class="stat">
-            <div class="leftcont">
-              <p><strong>Name:</strong> Jane Student</p>
-              <p><strong>Email:</strong> jane.student@example.edu</p>
-            </div>
-            <div class="rightcont">
-              <div class="upcoming">Edit profile and upload a photo.</div>
-            </div>
-          </div>
-        </section>
-
-        <section id="settings1">
-          <div class="namedisplay">Settings</div>
-          <div class="numup">Preferences</div>
-          <div class="stat">
-            <div class="leftcont">
-              <label
-                ><input type="checkbox" checked /> Email notifications</label
-              >
-              <label><input type="checkbox" /> SMS alerts</label>
-            </div>
-            <div class="rightcont">
-              <div class="upcoming">Change password and account options.</div>
-            </div>
-          </div>
-        </section>
-
-        <section id="logout"></section>
-      </div>
-      </div>
-      
-    </main>
-
-    <script src="../js/script.js" defer></script>
+          </section>
   </body>
 </html>
