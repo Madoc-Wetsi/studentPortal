@@ -1,4 +1,4 @@
-.teacher-dashboard {
+.student-dashboard {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -19,30 +19,24 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Recent Submissions */
-.recent-submissions {
+/* Courses List */
+.courses-list {
   height: 250px;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Quick Actions */
-.quick-actions {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.quick-actions .action-btn {
-  flex: 1 1 calc(33.33% - 15px);
-  height: 60px;
-  background: #e3e3e3;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+/* Upcoming Assignments */
+.upcoming-assignments {
+  height: 200px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Schedule */
-.schedule {
+/* Calendar */
+.calendar-section {
   height: 200px;
   background: #ffffff;
   border-radius: 8px;
